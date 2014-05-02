@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Vandal</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			canvas {
+				cursor: default;
+				outline: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div align="center" id="embed-com.turtleGames.vandal.GwtDefinition"></div>
+		<script type="text/javascript" src="com.turtleGames.vandal.GwtDefinition/com.turtleGames.vandal.GwtDefinition.nocache.js"></script>
+	</body>
+	
+	<script>
+		function handleMouseDown(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = 'default';
+		}
+		
+		function handleMouseUp(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = '';
+		}
+		
+		document.getElementById('embed-com.turtleGames.vandal.GwtDefinition').addEventListener('mousedown', handleMouseDown, false);
+		document.getElementById('embed-com.turtleGames.vandal.GwtDefinition').addEventListener('mouseup', handleMouseUp, false);
+	</script>
+</html>
